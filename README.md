@@ -27,3 +27,25 @@ Then i created and set the claimName attribute in cow-deploy.yaml as mypvclaim1:
 
 
 
+I applied everything after creation with the following commands:
+
+<code>kubectl apply -f PersistentVolume.yaml</code><br><br>
+
+<code>kubectl apply -f PersistentVolumeClaim.yaml</code><br><br>
+
+<code>kubectl apply -f cow-deploy.yaml</code><br><br>
+
+<code>kubectl apply -f cow-service.yaml</code><br><br>
+
+Between creation I also checked that everything as it supposed to be:
+
+<code>kubectl get pv mypvk1</code><br><br>
+
+<code>kubectl get pvc mypvclaim1</code><br><br>
+
+<code>kubectl get pod</code><br><br>
+
+<code>kubectl get svc</code><br><br>
+
+As you can see on the screenshot below everything aligned perfectly!
+
