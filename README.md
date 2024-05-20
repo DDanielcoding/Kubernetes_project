@@ -44,7 +44,7 @@ I applied everything after creation with the following commands:
 
 <code>kubectl apply -f cow-service.yaml</code><br><br>
 
-Between creation I also checked that everything as it supposed to be:
+Between creation I also verified that everything as it supposed to be:
 
 <code>kubectl get pv mypvk1</code><br><br>
 
