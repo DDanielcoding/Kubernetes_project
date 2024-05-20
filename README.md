@@ -47,6 +47,14 @@ Between creation I also checked that everything as it supposed to be:
 
 <code>kubectl get svc</code><br><br>
 
-As you can see on the screenshot below everything aligned perfectly!
+As you can see on the screenshot below everything aligned perfectly! So there's only one thing left to do is execute the pod!
 
 ![commands](https://github.com/DDanielcoding/Kubernetes_project/assets/155651525/f116e45e-7fe5-4f30-9232-e9f7993a793c)
+
+
+<code>kubectl exec -it cowsay-deployment1-6c74978d7c-rl877 sh</code><br><br>
+
+<code>curl localhost:80</code><br><br>
+
+![final](https://github.com/DDanielcoding/Kubernetes_project/assets/155651525/c6e97152-bc01-4522-94b7-c705f7711dc8)
+
