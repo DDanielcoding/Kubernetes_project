@@ -49,3 +49,4 @@ Between creation I also checked that everything as it supposed to be:
 
 As you can see on the screenshot below everything aligned perfectly!
 
+![commands](https://github.com/DDanielcoding/Kubernetes_project/assets/155651525/f116e45e-7fe5-4f30-9232-e9f7993a793c)
