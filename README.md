@@ -21,13 +21,13 @@ This project demonstrates an easy and quick way how to deploy and run the classi
 
 
 
-3. Deploy the Application
+3. **Deploy the Application**
    
 Create the deployment configuration 'cow-deploy.yaml':
 
 ![cow_deploy](https://github.com/DDanielcoding/Kubernetes_project/assets/155651525/25996fa8-0ddb-4df1-82c6-00b0c8da042c)
 
-4. Expose the Deployment
+4. **Expose the Deployment**
    
 Create the service configuration 'cow-service.yaml':
 
@@ -44,7 +44,9 @@ I applied everything after creation with the following commands:
 
 <code>kubectl apply -f cow-service.yaml</code><br><br>
 
-Between creation I also verified that everything as it supposed to be:
+**Verification**
+
+After creating each resource, I verified that everything was set up correctly by using the following commands to check the status of the PersistentVolume, PersistentVolumeClaim, pods, and services:
 
 <code>kubectl get pv mypvk1</code><br><br>
 
@@ -54,12 +56,15 @@ Between creation I also verified that everything as it supposed to be:
 
 <code>kubectl get svc</code><br><br>
 
-As you can see on the screenshot below everything aligned perfectly! So there's only one thing left to do is execute the pod!
+As you can see on the screenshot below everything aligned perfectly!
 
 ![commands](https://github.com/DDanielcoding/Kubernetes_project/assets/155651525/f116e45e-7fe5-4f30-9232-e9f7993a793c)
 
+5. **Running the Application**:
 
 <code>kubectl exec -it cowsay-deployment1-6c74978d7c-rl877 sh</code><br><br>
+
+Verify the output by accessing the NGINX server:
 
 <code>curl localhost:80</code><br><br>
 
