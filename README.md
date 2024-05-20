@@ -9,22 +9,27 @@ This project demonstrates an easy and quick way how to deploy and run the classi
 # Setup and Deployment
 
 
-Firstly I created the PersistentVolume.yaml file as shown below: (mypvk1)
+1. Firstly, create the 'PersistentVolume.yaml' file as shown below:
 
 ![mypvk1](https://github.com/DDanielcoding/Kubernetes_project/assets/155651525/dcee0be6-da47-4ea2-89d2-96a76bcade75)
 
 
 
-After that i created PersistentVolumeClaim.yaml file with name of "mypvclaim1"
+2. Next, create the 'PersistentVolumeClaim.yaml' file with the name 'mypvclaim1':
 
 ![mypvclaim1](https://github.com/DDanielcoding/Kubernetes_project/assets/155651525/3d26172e-4de9-4152-a86e-0c97be571bcf)
 
 
 
-Then i created and set the claimName attribute in cow-deploy.yaml as mypvclaim1:
+3. Deploy the Application
+Create the deployment configuration 'cow-deploy.yaml':
 
 ![cow_deploy](https://github.com/DDanielcoding/Kubernetes_project/assets/155651525/25996fa8-0ddb-4df1-82c6-00b0c8da042c)
 
+4. Expose the Deployment
+Create the service configuration 'cow-service.yaml':
+
+![cow-service](https://github.com/DDanielcoding/Kubernetes_project/assets/155651525/3faf12b9-9397-449e-92f1-ed2e05bd72e4)
 
 
 I applied everything after creation with the following commands:
