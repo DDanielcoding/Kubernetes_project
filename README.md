@@ -22,11 +22,13 @@ This project demonstrates an easy and quick way how to deploy and run the classi
 
 
 3. Deploy the Application
+   
 Create the deployment configuration 'cow-deploy.yaml':
 
 ![cow_deploy](https://github.com/DDanielcoding/Kubernetes_project/assets/155651525/25996fa8-0ddb-4df1-82c6-00b0c8da042c)
 
 4. Expose the Deployment
+   
 Create the service configuration 'cow-service.yaml':
 
 ![cow-service](https://github.com/DDanielcoding/Kubernetes_project/assets/155651525/3faf12b9-9397-449e-92f1-ed2e05bd72e4)
