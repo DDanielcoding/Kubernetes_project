@@ -13,3 +13,6 @@ Firstly I created the PersistentVolume.yaml file as shown below: (mypvk1)
 ![mypvk1](https://github.com/DDanielcoding/Kubernetes_project/assets/155651525/dcee0be6-da47-4ea2-89d2-96a76bcade75)
 
 After that i created PersistentVolumeClaim.yaml file with name of "mypvcalim1"
+
+![mypvclaim1](https://github.com/DDanielcoding/Kubernetes_project/assets/155651525/3d26172e-4de9-4152-a86e-0c97be571bcf)
+
