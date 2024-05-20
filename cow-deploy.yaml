@@ -1,0 +1,33 @@
+apiVersion: apps/v1 
+kind: Deployment
+metadata:
+  name: cowsay-deployment1
+  labels:
+    app: cowsay-hw
+spec:
+  selector:
+    matchLabels:
+      app: cowsay-hw
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: cowsay-hw
+    spec:
+      volumes:
+      - name: shared-data
+        persistentVolumeClaim:
+          claimName: mypvclaim1
+      containers:
+      - name: nginx
+        image: nginx:latest
+        ports:
+        - containerPort: 80
+        volumeMounts:
+        - name: shared-data
+          mountPath: /usr/share/nginx/html
+      - name: cowsay
+        image: hsnlabhu/hw2:cowsay
+        volumeMounts:
+        - name: shared-data
+          mountPath: /root/html
